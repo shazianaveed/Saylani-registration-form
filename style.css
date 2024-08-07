@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "futurak";
+    src: url(fonts/futurak.ttf);
+}
+
+body {
+    margin: 0%;
+    padding:0%;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    color: white;
+    text-align: center;
+}
+
+.background-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1
+    }
+    .background-img{
+        opacity: 0.1;
+    }
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+.middle-content img{
+    width: 40%;
+    height: 90px;
+    align-items: flex-start;
+    position: relative;
+    top: 10px;
+}
+
+.left-side {
+    display: flex;
+   position: relative;
+   top: 100px;
+   padding-top: auto;
+   padding-bottom: auto;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 20px 10px;
+    position: static;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    margin-right: 20px;
+    color: black;
+    position: relative;
+    top: 50px;
+}
+h2 {
+    margin: 0;
+    font-size: 22pxpx;
+    margin-right: 20px;
+    color: rgb(71, 68, 68);
+    position: relative;
+    top: 50px;
+}
+
+.social-icons {
+    display: flex;
+    position: relative;
+    gap: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    position:relative;
+}
+
+.right-side {
+     display: flex;
+       position: relative;
+       top: 100px;
+       padding-top: auto;
+       padding-bottom: auto;
+       align-items: center;
+       margin-left: 90px;
+       margin-right: 10px;
+    }
+
+
+.student-portal {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color:#3462b2;
+    border-color:#3462b2;
+    padding:auto;
+    border-radius: 35px;
+    font-size: 16px;
+    border-style: solid 1px;
+
+}
+
+.student-portal i {
+    margin-right: 10px;
+    background-color: white;
+    color:#3462b2;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+}
+
+.middle-content {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+.middle-content img{
+    padding: 40 50 60 50;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right:30%;
+    margin-left: 30%;
+
+}
+
+.action-btn {
+    border: solid 1px whitesmoke;
+    border-bottom: none;
+    border-radius: 4px;
+    background-color:transparent;
+    color: rgb(28, 42, 240);
+    padding:2px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative; 
+    top:80px;
+
+
+
+
+}
+
+.action-btn:hover {
+    background-color:rgb(207, 199, 199);
+}
+
+
+.form-container {
+    width: 100%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(29, 69, 202, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea, select, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #45a049;
+}
+
+textarea {
+    height: 50px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: #3462b2;
+    border-radius: 35px;
+    cursor: pointer;
+    border-style: double;
+    font-size: larger;
+}
+
+button:hover {
+    background-color: #196e1d;
+}
+
+.declaration {
+    margin: 20px 0;
+}
+
+.declaration p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.col {
+    flex: 1;
+    margin-right: 10px;
+}
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.col:last-child {
+    margin-right: 5px;
+}
+
+.upload-box {
+    position: relative;
+    width: 10%;
+    line-height: 80px;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.upload-box input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 50px;
+    opacity: 0;
+}
+
+.upload-text {
+    display: inline-block;
+    padding: 10px;
+    color: #007BFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+.upload-text:hover {
+    text-decoration: underline;
+}

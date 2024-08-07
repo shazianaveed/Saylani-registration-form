@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - SMIT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4876bfe495.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Background" class="background-img">
+
+        <div class="header-content">
+            <div class="left-side">
+            <div class="social-icons">
+                    <i class="fa-brands fa-facebook" style="color: #74C0FC;"></i>
+                    <i class="fa-brands fa-instagram " style="color: #ee3b1b;"></i>
+                    <i class="fa-brands fa-youtube" style="color: #ee4217;"></i>
+                </div>
+            </div>
+            <div class="middle-content">
+                <img src="https://forms.saylaniwelfare.com/static/media/logo.22bf709605809177256c.png" alt="Logo" class="logo">
+                <h1>REGISTRATION FORM - SMIT</h1>
+                <h2>Services - Education - Registration</h2>
+                <div class="buttons">
+                    <button class="action-btn">Registration</button>
+                    <button class="action-btn">Download ID Card</button>
+                    <button class="action-btn">Result</button>
+                </div>
+                </div>
+            <div class="right-side">
+                <button class="student-portal">
+                    <i class="fa-solid fa-user-graduate fa-lg" style="color: #3462b2;"></i>
+                    Student Portal
+                </button>
+            </div>
+         </div>
+    </header>
+    <div class="form-container">
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+            <h1>Admission Form</h1>
+
+            <!-- City and Course/Event Selection -->
+            <div class="row">
+                <div class="col">
+                    <label for="city">Select city:</label>
+                    <select id="city" name="city">
+                        <option value="">Select city</option>
+                        <option value="karachi">Karachi</option>
+                        <option value="lahore">Lahore</option>
+                        <option value="islamabad">Islamabad</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="course">Select course or event:</label>
+                    <select id="course" name="course">
+                        <option value="">Select course or event</option>
+
+                        <!-- First row -->
+                        <option value="web">Web Development</option>
+                        <option value="mobile_app">Mobile App Development</option>
+                        <!-- Second row -->
+                        <option value="graphics_designing">Graphics Designing</option>
+                        <option value="digital_marketing">Digital Marketing</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Campus and Class Preference -->
+            <div class="row">
+                <div class="col">
+                    <label for="campus">Select campus:</label>
+                    <select id="campus" name="campus">
+                        <option value="">Select campus</option>
+                        <option value="malir">Malir</option>
+                        <option value="gulsane">Gulshan</option>
+                        <option value="paposh">Paposh</option>
+                        <option value="bahadruabad">Bahadruabad</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="class_preference">Select class preference:</label>
+                    <select id="class_preference" name="class_preference">
+                        <option value="">Select class preference</option>
+                        <option value="weekday">Weekday (Monday to Friday)</option>
+                        <option value="weekend">Weekend (Saturday to Sunday)</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Personal Details -->
+            <div class="row">
+                <div class="col">
+                    <label for="full_name">Full name:</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                </div>
+                <div class="col">
+                    <label for="father_name">Father's name:</label>
+                    <input type="text" id="father_name" name="father_name" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="col">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="cnic">CNIC:</label>
+                    <input type="text" id="cnic" name="cnic" required>
+                </div>
+                <div class="col">
+                    <label for="father_cnic">Father's CNIC (optional):</label>
+                    <input type="text" id="father_cnic" name="father_cnic">
+                </div>
+            </div>
+
+            <!-- Date of Birth and Gender -->
+            <div class="row">
+                <div class="col">
+                    <label for="dob">Date of birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="col">
+                    <label for="gender">Select gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="Select gender">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <!-- Add options here -->
+                    </select>
+                </div>
+            </div>
+
+            <!-- Address and Qualification -->
+               <!-- Address -->
+        <div class="form-row">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+
+        <!-- Last Qualification -->
+        <div class="form-row">
+            <label for="qualification">Last qualification:</label>
+            <select id="Qualification" name="Qualification"  required>
+                <option value="">Select last Qualification</option>
+                <option value="matriculation">Matriculation</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="undergraduate">Undergrduate</option>
+                <option value="Postgrduate">Postgrduate</option>
+                <option value="Grduate">Grduate</option>
+                <option value="Master">Master</option>
+                <option value="Other">Other</option>
+                </select>
+          </div>
+
+        <!-- Do you have a Laptop? -->
+        <div class="form-row">
+            <label for="laptop">Do you have a Laptop?</label>
+            <select id="laptop" name="laptop">
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <!-- Upload Picture -->
+        <div class="form-row">
+            <label for="picture" class="upload-label">Upload your recent passport size picture:</label>
+            <div class="upload-box">
+                <input type="file" id="picture" name="picture" accept=".jpg, .jpeg, .png" required>
+                <span class="upload-text">+ Upload</span>
+            </div>
+            <p>With white or blue background</p>
+            <p>File size must be less than 1MB</p>
+            <p>File type: jpg, jpeg, png</p>
+            <p>Your face should be clearly visible without any glasses</p>
+        </div><hr>
+
+        <!-- Declaration -->
+        <div class="declaration">
+          <p>1.I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</p>
+          <p>2.I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.</p>
+          <p>3.Defiance will render my admission canceled at any point in time.</p>
+          <p>4.Upon completion, of the course, I will complete the required project by SWIT.</p>
+          <p>5.It's mandatory for female students to wear abaya/hijab in the class</p>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</html>
